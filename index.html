@@ -71,8 +71,9 @@
       text-decoration-style: dotted;
       cursor: pointer;
     }
-    summary:hover {
-      transform: rotate(calc(var(--angle) * 4));
+
+    details:not([opne]) > summary {
+      transform: rotate(-5deg);
     }
 
     details[open] > summary {
