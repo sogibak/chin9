@@ -20,6 +20,7 @@
       padding-right: 20vw;
       padding-bottom: 10vw;
     }
+    
  @media (max-width: 768px) {
   body {
     padding-left: 4vw;
@@ -34,6 +35,14 @@
     width: 100%;
     max-width: none;
   }
+ }
+
+   @media (max-width: 480px) {
+  body {
+    padding-left: 2vw;
+    padding-right: 4vw;
+  }
+}
 
   .info {
     text-align: left;
@@ -91,6 +100,12 @@
     summary:hover {
       transform: rotate(calc(var(--angle) * 4));
     }
+
+    details[open] > summary {
+      transform: none;
+    }
+
+    
     .name {
       font-weight: 800;
       padding-left: 10vw;
